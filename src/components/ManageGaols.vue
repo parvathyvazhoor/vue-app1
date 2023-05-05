@@ -2,7 +2,6 @@
   <h1>Manage Goals</h1>
   <input type="text" ref="inputGoal" v-model="goal" />
   <button @click="setGoal">Set Goal</button>
-  {{ activeGoals.length }}
   <Teleport to="body">
     <ErrorAlert v-if="inputIsInvalid">
       <p>please input something!</p>
